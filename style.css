@@ -1,0 +1,40 @@
+body {
+    margin: 50px auto;
+    max-width: 500px;
+    background-color:   #f2f2f2
+;
+}
+
+#subheading {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+#anotherSubHeading {
+    font-size: 12px;
+    line-height: 1px;
+    margin-top:0px;
+}
+
+#headerMenu {
+    margin-bottom: 35px;
+}
+
+#menu > ul {
+    list-style-type: none;
+    padding-left: 0px;    
+}
+
+#menu > ul > li {
+    float: left;
+    padding-right: 10px;
+}
+
+.linksColumns {
+    float: left;
+    padding-right: 30px;
+}
+
+.clear {
+    clear: both;
+}
