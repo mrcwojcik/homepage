@@ -1,40 +1,117 @@
 body {
-    margin: 50px auto;
-    max-width: 500px;
-    background-color:   #f2f2f2
-;
-}
+    font-family: 'Rubik', Roboto, Oxygen, sans-serif;
+    font-size: calc(10px + 0.33vw);
+    padding: 0.5vh 8vw;
+    color: #121314;
+  }
+  
+  h1 {
+    font-size: 3.5em;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
 
-#subheading {
-    font-size: 20px;
-    margin-bottom: 6px;
-}
+  h5 {
+    font-weight: 200;
+    margin-bottom: 10px;
+  }
 
-#anotherSubHeading {
-    font-size: 12px;
-    line-height: 1px;
-    margin-top:0px;
-}
+  i {
+      font-size: 0.9em;
+  }
 
-#headerMenu {
-    margin-bottom: 35px;
-}
+  p {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 28em;
+    text-align: justify;
+    text-justify: inter-word
+  }
 
-#menu > ul {
-    list-style-type: none;
-    padding-left: 0px;    
-}
+  #main > p > a {
+    text-decoration: none;
+    color: #121314;
+    position: relative;
+  }
+  
+  #main > p > a:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 60%;
+    left: -0.1em;
+    right: -0.1em;
+    bottom: 0;
+    transition: top 200ms cubic-bezier(0, .8, .13, 1);
+    background-color: rgba(79,192,141,0.5);
+  }
+  #main > p > a:hover:after {
+    top: 0%;
+  }
+  
+  .links > ul > li > a {
+    text-decoration: none;
+    color: #121314;
+    position: relative;
+  }
+  
+  .links > ul > li > a:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 60%;
+    left: -0.1em;
+    right: -0.1em;
+    bottom: 0;
+    transition: top 200ms cubic-bezier(0, .8, .13, 1);
+    background-color: rgba(79,192,141,0.5);
+  }
+  .links > ul > li > a:hover:after {
+    top: 0%;
+  }
 
-#menu > ul > li {
-    float: left;
+  #subheading {
+      font-size: 2.0em;
+      font-weight: 500;
+  }
+
+  #linksTitle{
+      line-height: 0.1;
+      font-size: 0.9em;
+      margin-right: 5px;
+  }
+
+  #copyright {
+      font-size: 0.6em;
+  }
+
+  .socialLinks > a {
+    text-decoration: none;
     padding-right: 10px;
-}
+    opacity: 0.5;
+  }
 
-.linksColumns {
-    float: left;
-    padding-right: 30px;
-}
+  hr {
+      width: 34em;
+      float: left;
+  }
 
-.clear {
-    clear: both;
-}
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  li {
+      float: left;
+      padding-right: 1.5em;
+  }
+
+  .links {
+      padding-bottom: 0.5em;
+  }
+
+  .clear {
+      clear: both;
+  }
