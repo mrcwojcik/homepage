@@ -50,13 +50,17 @@ body {
     top: 0%;
   }
   
-  .links > ul > li > a {
+  .links > ul > li > a, 
+  .projectsList > li > span > a,
+  .dreamList > li > a {
     text-decoration: none;
     color: #121314;
     position: relative;
   }
   
-  .links > ul > li > a:after {
+  .links > ul > li > a:after,
+  .projectsList > li > span > a:after,
+  .dreamList > li > a:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -67,7 +71,9 @@ body {
     transition: top 200ms cubic-bezier(0, .8, .13, 1);
     background-color: rgba(79,192,141,0.5);
   }
-  .links > ul > li > a:hover:after {
+  .links > ul > li > a:hover:after, 
+  .projectsList > li > span > a:hover:after,
+  .dreamList > li > a:hover:after {
     top: 0%;
   }
 
@@ -103,7 +109,7 @@ body {
       padding: 0;
   }
 
-  li {
+  .mainLinks {
       float: left;
       padding-right: 1.5em;
   }
@@ -115,3 +121,25 @@ body {
   .clear {
       clear: both;
   }
+
+  .projectsList, .dreamList, #courses, .importantLinks {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  .projectsList > li {
+    line-height: 1.5em;
+  }
+  
+  .projectsList > li > span {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .doneDream {
+    text-decoration: line-through;
+  }
+
+
+
