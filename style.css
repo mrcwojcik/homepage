@@ -11,6 +11,10 @@ body {
     margin-bottom: 0;
   }
 
+  h3 {
+    font-weight: 350;
+  }
+
   h5 {
     font-weight: 200;
     margin-bottom: 10px;
@@ -141,5 +145,30 @@ body {
     text-decoration: line-through;
   }
 
+  .workTime {
+    font-weight: 100;
+    font-size: 0.7em;
+  }
 
+  .workStatus {
+    font-weight: 100;
+    font-size: 1em;
+    line-height: 2em;
+  }
 
+  .responsibilities {
+    font-weight: 100;
+    font-size: 0.9em;
+  }
+
+  .whatIDo {
+    list-style-type: initial;
+  }
+
+  .whatIDo > li {
+    margin-left: 25px;
+  }
+
+  .jobBox {
+    margin-top: 12px;
+  }
