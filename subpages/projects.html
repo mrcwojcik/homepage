@@ -7,40 +7,39 @@
         <title>Projekty - Marcin Wójcik</title>
     </head>
     <body>
-        <div id="main">
-            <h1>Moje projekty</h1>
-            <p>Oto projekty, przy których angażowałem się przez ostatnie lata w mniejszym lub większym stopniu.</p>
-            <h2>Aktualne</h2>
-            <ul class="projectsList">
-                <li><span class="projectTitle"><a href="http://kulinarny.olsztyn.pl">Kulinarny Olsztyn</a></span> - blog gastronomiczny poświęcony Olsztynowi</li>
-                <li><span class="projectTitle"><a href="">blog mrcwojcik.pl</a></span> - blog prywatny</li>
-                <li><span class="projectTitle"><a href="">Odgrzewane Kotlety</a></span> - podcast poświęcony popkulturze</li>
-            </ul>
-            <h2>WSPIERAM I KIBICUJĘ</h2>
-            <ul class="projectsList">
-                <li><span class="projectTitle"><a href="https://www.facebook.com/Olcamp/">Olcamp</a></span></li>
-                <li><span class="projectTitle">Startup Weekend Olsztyn</span></li>
-            </ul>
-            <h2>HISTORIA</h2>
-            <ul class="projectsList">
-                <li><span class="projectTitle">Olsztyn żyje / Płock żyje</span></li>
-                <li><span class="projectTitle">Płockamp</span></li>
-                <li><span class="projectTitle">Olsztynstreetart.pl</span></li>
-                <li><span class="projectTitle">Spotie.me</span></li>
-                <li><span class="projectTitle">Olsztyńskie Mikołajki</span></li>
-            </ul>
-        </div>
-        <footer>
-            <div class="socialLinks">
-                <p id="linksTitle">Social links:</p>
-                <a href=""><img src="https://img.icons8.com/ios/24/000000/facebook-new.png"></a>
-                <a href=""><img src="https://img.icons8.com/ios/24/000000/twitter.png"></a>
-                <a href=""><img src="https://img.icons8.com/ios/24/000000/github.png"></a>
-                <a href=""><img src="https://img.icons8.com/ios/24/000000/linkedin.png"></a>
-                <a href=""><img src="https://img.icons8.com/ios/24/000000/instagram-new.png"></a>
+        <div id="container">
+            <div id="main">
+                <h1>Moje projekty</h1>
+                <p>Oto projekty, przy których angażowałem się przez ostatnie lata w mniejszym lub większym stopniu.</p>
+                <h3>Aktualne</h3>
+                <ul class="projectsList">
+                    <li><span class="projectTitle"><a href="http://kulinarny.olsztyn.pl">Kulinarny Olsztyn</a></span> - blog gastronomiczny poświęcony Olsztynowi</li>
+                    <li><span class="projectTitle"><a href="">blog mrcwojcik.pl</a></span> - blog prywatny</li>
+                    <li><span class="projectTitle"><a href="">Odgrzewane Kotlety</a></span> - podcast poświęcony popkulturze</li>
+                </ul>
+                <h3>WSPIERAM I KIBICUJĘ</h3>
+                <ul class="projectsList">
+                    <li><span class="projectTitle"><a href="https://www.facebook.com/Olcamp/">Olcamp</a></span></li>
+                    <li><span class="projectTitle">Startup Weekend Olsztyn</span></li>
+                </ul>
+                <h3>HISTORIA</h3>
+                <ul class="projectsList">
+                    <li><span class="projectTitle">Olsztyn żyje / Płock żyje</span></li>
+                    <li><span class="projectTitle">Płockamp</span></li>
+                    <li><span class="projectTitle">Olsztynstreetart.pl</span></li>
+                    <li><span class="projectTitle">Spotie.me</span></li>
+                    <li><span class="projectTitle">Olsztyńskie Mikołajki</span></li>
+                </ul>
             </div>
-            <hr>
-            <p id="copyright">Made by Marcin. 2020</p>
-        </footer>
+            <div id="links">
+                <ul>
+                    <li class="mainLinks">
+                        <a href="#" onclick="window.history.back();">Powrót do strony głównej</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div include-html="/footer.html"></div> 
+        <script type="text/javascript" src="/js/main.js"></script>
     </body>
 </html>

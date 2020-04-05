@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8em;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  a {
+    color: #1c9c94
+  }
+
+  a:hover {
+    opacity: 0.5;
+  }
+  
+  a .fab {
+    color: white;
+  }
+
+  .fab {
+    border: 1px solid white;
+    font-size: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    padding-top: 0.1em;
+  }
+
+  article {
+    padding:0 1em;
+  }
+  
+  section{
+    margin: 1em;
+    padding: 1em;
+  }
+  
+  main section:not(:last-child){
+    border-bottom: 1px solid gray;
+  }
+
+  header, main, footer {
+    margin: 0 auto;
+  }
+  
+  header {
+    padding: 2em;
+    text-align: center;
+    background-size: cover;
+    background-image: url('/img/bg.jpg');
+    background-position: fixed;
+    color: white;
+
+  }
+
+  header h1 {
+    text-transform: uppercase;
+  }
+  
+  header section {
+    margin: 0 auto;
+    max-width: 640px;
+  }
+  
+  header img {
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  
+  h1 {
+    margin: 1em 0;
+  }
+
+  h3 {
+      text-transform: uppercase;
+      font-weight: bold; 
+  }
+  
+  main {
+    max-width: 1140px;
+  }
+  
+  .course, .skills {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .course .title {
+      color: #509e98;
+      text-transform: uppercase;
+      font-weight: bold;
+      -ms-flex: 0 0 33.3%;
+     flex: 0 0 33.3%;
+    max-width: 33%;
+  }
+  
+  .course .descrition {
+    -ms-flex: 0 0 66.6%;
+    flex: 0 0 66.6%;
+    max-width: 66.6%;
+  }
+
+  .course .descrition p {
+      padding-left: 1em;
+      margin: 0;
+  }
+
+  .skills .column {
+    -ms-flex: 0 0 33.3%;
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+  }
+
+  .skills .column ul {
+      list-style-type: none;
+      margin: 0;
+  }
+
+  .skills .column ul li::before {
+      content: "►";
+      padding-right: 0.5em;
+      color: turquoise;
+
+  }
+
+  .school, .job-title{
+    text-transform: capitalize;
+  }
+  
+  .school span, .job-title span {
+    color: gray;
+    margin-right: 10px;
+    color: #889499;
+  text-decoration: underline;
+  }
+
+  .job-description {
+    list-style-type: none;
+  }
+
+  .job-description li::before {
+      content:  "✔";
+    padding-right: 0.5em;
+  color: #509e98;
+  }
+  
+  footer {
+   padding: 1em;
+   text-align: right;
+   background-color: #A7B8BF;
+   color: white;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .course {
+      display: block;
+    }
+  
+    .course .title, .course .descrition {
+      max-width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .skills {
+      display: block;
+    }
+  
+    .skills .column {
+      max-width: 100%;
+    }
+  
+    footer {
+      text-align: center;
+    }
+  }
+
+  /* Back link */
+
+  #links ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mainLinks {
+    flex: 0 0 33.3%;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .mainLinks a {
+    text-decoration: none;
+    color: #121314;
+    position: relative;
+
+  }
+
+  .mainLinks a::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 60%;
+    left: -0.1em;
+    right: -0.1em;
+    bottom: 0;
+    transition: top 200ms cubic-bezier(0, .8, .13, 1);
+    background-color: #99c2ff;
+  }
+
+  .mainLinks a:hover:after {
+    top: 0%;
+
+  }

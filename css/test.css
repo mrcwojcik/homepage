@@ -1,0 +1,181 @@
+body {
+    font-family: 'Rubik', Roboto, Oxygen, sans-serif;
+    font-size: calc(10px + 0.33vw);
+    padding: 0.5vh 8vw;
+    color: #121314;
+  }
+  
+  h1 {
+    font-size: 3.5em;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .hello {
+    color: #1a75ff
+    ;
+  }
+
+  h3 {
+    font-weight: 350;
+  }
+
+  h5 {
+    font-weight: 200;
+    margin-bottom: 10px;
+  }
+
+  i {
+      font-size: 0.9em;
+  }
+
+  p {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 28em;
+    text-align: justify;
+    text-justify: inter-word
+  }
+
+
+  #main > p > a {
+    text-decoration: none;
+    color: #121314;
+    position: relative;
+  }
+  
+  #main > p > a:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 60%;
+    left: -0.1em;
+    right: -0.1em;
+    bottom: 0;
+    transition: top 200ms cubic-bezier(0, .8, .13, 1);
+    background-color: #99c2ff;
+  }
+
+  #main > p > a:hover:after {
+    top: 0%;
+  }
+  
+  .links > ul > li > a, 
+  .projectsList > li > span > a,
+  .dreamList > li > a {
+    text-decoration: none;
+    color: #121314;
+    position: relative;
+  }
+  
+  .links > ul > li > a:after,
+  .projectsList > li > span > a:after,
+  .dreamList > li > a:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 60%;
+    left: -0.1em;
+    right: -0.1em;
+    bottom: 0;
+    transition: top 200ms cubic-bezier(0, .8, .13, 1);
+    background-color: #66a3ff;
+  }
+  .links > ul > li > a:hover:after, 
+  .projectsList > li > span > a:hover:after,
+  .dreamList > li > a:hover:after {
+    top: 0%;
+  }
+
+  #subheading {
+      font-size: 2.0em;
+      font-weight: 500;
+  }
+
+  #linksTitle{
+      line-height: 0.1;
+      font-size: 0.9em;
+      margin-right: 5px;
+  }
+
+  #copyright {
+      font-size: 0.6em;
+  }
+
+  .socialLinks > a {
+    text-decoration: none;
+    padding-right: 10px;
+    opacity: 0.5;
+  }
+
+  hr {
+      width: 34em;
+      float: left;
+  }
+
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .mainLinks {
+      float: left;
+      padding-right: 1.5em;
+  }
+
+  .links {
+      padding-bottom: 0.5em;
+  }
+
+  .clear {
+      clear: both;
+  }
+
+  .projectsList, .dreamList, #courses, .importantLinks {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  .projectsList > li {
+    line-height: 1.5em;
+  }
+  
+  .projectsList > li > span {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .doneDream {
+    text-decoration: line-through;
+  }
+
+  .workTime {
+    font-weight: 100;
+    font-size: 0.7em;
+  }
+
+  .workStatus {
+    font-weight: 100;
+    font-size: 1em;
+    line-height: 2em;
+  }
+
+  .responsibilities {
+    font-weight: 100;
+    font-size: 0.9em;
+  }
+
+  .whatIDo {
+    list-style-type: initial;
+  }
+
+  .whatIDo > li {
+    margin-left: 25px;
+  }
+
+  .jobBox {
+    margin-top: 12px;
+  }
