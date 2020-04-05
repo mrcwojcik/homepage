@@ -7,8 +7,6 @@ This is my simple and small homepage. It powered by HTML5 and CSS.
 ### Todos
 
  - Add Night Mode
- - Add Google Analytics scripts
- - Improve RWD
 
 Inspitarion
 ----
